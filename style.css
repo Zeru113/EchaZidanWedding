@@ -1,5 +1,5 @@
 :root {
-    --orange: #F54914;
+    --colorTheme: #a47b23;
     --bg: black;
     --shadow: 0 2px 2px rgba(0,0,0/0.5);
 }
@@ -11,8 +11,17 @@ body {
     overflow: visible;
 }
 
+.bridegroom, .ayat {
+    min-height: 100vh;
+}
+
+
 .envelope {
     position: relative;
+    min-height: 100vh;
+}
+
+.info {
     min-height: 100vh;
 }
 
@@ -37,8 +46,14 @@ body {
 }
 
 .envelope h2, .info h2, .konfirmasi h2 {
-    color: var(--orange);
+    color: var(--colorTheme);
     text-shadow: black 0px 0 10px;
+}
+
+.envelope h2 {
+    font-family: 'Tangerine', cursive;
+    font-size: 3.5rem;
+    font-weight: bold;
 }
 
 .envelope p {
@@ -47,11 +62,11 @@ body {
 
 .envelope a, .info a, .countdown a, .konfirmasi button{
     color: white;
-    background-color: var(--orange);
+    background-color: var(--colorTheme);
 }
 
 .envelope a:hover, .info a:hover, .countdown a:hover, .konfirmasi button:hover {
-    color: var(--orange);
+    color: var(--colorTheme);
     background-color: white;
 }
 
@@ -60,9 +75,10 @@ body {
 }
 
 .bridegroom h3 {
-    font-family: 'sacramento', cursive;
-    color: var(--orange);
+    font-family: 'Tangerine', cursive;
+    color: var(--colorTheme);
     font-size: 2.5rem;
+    font-weight: bold;
 }
 
 .bridegroom .couple img {
@@ -85,7 +101,7 @@ body {
     left: 0;
     right: 0;
     bottom: 0;
-    background-image: url(./img/countdownrunv3.webp);
+    background-image: url(./img/background_info.webp);
     filter: brightness(0.5);
     background-position: center;
     background-size: cover;
@@ -99,7 +115,7 @@ body {
 
 .info .tanggal {
     font-size: 1.5rem;
-    color: var(--orange);
+    color: var(--colorTheme);
 }
 
 .info p {
